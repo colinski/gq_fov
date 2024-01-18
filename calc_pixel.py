@@ -5,13 +5,12 @@ import numpy as np
 import json
 import matplotlib.pyplot as plt
 import pandas as pd
-import rosbag
 import math
 from scipy.spatial.transform import Rotation as R
 
 def load_frame(fname):
     frame = cv2.imread(fname)
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) 
+    #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) 
     frame = cv2.resize(frame, (1920, 1080))
     return frame
 
